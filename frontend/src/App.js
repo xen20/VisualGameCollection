@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import AddGame from "./components/addGame";
+import AddGameBatch from "./components/addGameBatch";
+import NavBar from "./components/navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {};
+  render() {
+    return (
+      <div>
+        <span>
+          <NavBar></NavBar>
+          <AddGame></AddGame>
+          <AddGameBatch></AddGameBatch>
+        </span>
+      </div>
+    );
+  }
+
+  handleCsvInput = () => {
+    return null;
+  };
+
+  handleNumericInput = () => {
+    return null;
+  };
+
+  handleStringInput = () => {
+    return null;
+  };
+
+  handleDateINput = () => {
+    return null;
+  };
 }
 
 export default App;
