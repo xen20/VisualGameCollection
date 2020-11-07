@@ -2,9 +2,8 @@ import React, { Component } from "react";
 
 class AddGame extends Component {
   styles = {
-    fontSize: 20,
+    fontSize: 15,
     fontWeight: "bold",
-    font: "calibri",
   };
 
   render() {
@@ -12,11 +11,27 @@ class AddGame extends Component {
       <div>
         <span style={this.styles}>
           <form>
-            <label for="textf">Text:</label>
-            <input type="text" id="textf" name="textf"></input>
-            <label for="numf">Numerics:</label>
-            <input type="number" id="numf" name="numf"></input>
-            <label for="datef">Date:</label>
+            <label className="sr-only" htmlFor="textf">
+              Name
+            </label>
+            <input
+              type="text"
+              id="textf"
+              name="textf"
+              placeholder="Text"
+            ></input>
+            <label className="sr-only" htmlFor="numf">
+              Name
+            </label>
+            <input
+              type="number"
+              id="numf"
+              name="numf"
+              placeholder="Number"
+            ></input>
+            <label className="sr-only" htmlFor="datef">
+              Name
+            </label>
             <input type="date" id="datef" name="datef"></input>
           </form>
         </span>

@@ -1,15 +1,11 @@
 import React from "react";
 
-// TODO: install whatever is reqd for bar styles - check mosh video
-
-const NavBar = ({ totalCounters }) => {
+// instead of a stateless component, one may have this...
+const NavBar = () => {
   return (
     <nav className="navbar navbar-light bg-light">
       <a className="navbar-brand" href="#">
-        Navbar{" "}
-        <span className="badge badge-pill badge-secondary">
-          {totalCounters}
-        </span>
+        Navbar <span className="badge badge-pill badge-secondary"></span>
       </a>
     </nav>
   );

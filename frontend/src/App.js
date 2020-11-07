@@ -1,24 +1,19 @@
 import React, { Component } from "react";
 import AddGame from "./components/addGame";
+import "bootstrap/dist/css/bootstrap.min.css";
 import AddGameBatch from "./components/addGameBatch";
-import NavBar from "./components/navbar";
+import Navbar from "./components/navbar";
+import "./App.css";
 
 class App extends Component {
   state = {};
-  render() {
-    return (
-      <div>
-        <span>
-          <NavBar></NavBar>
-          <AddGame></AddGame>
-          <AddGameBatch></AddGameBatch>
-        </span>
-      </div>
-    );
+
+  componentDidMount() {
+    console.log("mnt");
   }
 
   handleCsvInput = () => {
-    return null;
+    console.log("CSV input");
   };
 
   handleNumericInput = () => {
@@ -32,6 +27,16 @@ class App extends Component {
   handleDateINput = () => {
     return null;
   };
+
+  render() {
+    return (
+      <React.Fragment>
+        <Navbar></Navbar>
+        <AddGame></AddGame>
+        <AddGameBatch onCsvInput={this.handleCsvInput} randomNums={[1, 2, 3]} />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
