@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
 
 class AddGame extends Component {
   styles = {
@@ -10,30 +11,7 @@ class AddGame extends Component {
     return (
       <div>
         <span style={this.styles}>
-          <form>
-            <label className="sr-only" htmlFor="textf">
-              Name
-            </label>
-            <input
-              type="text"
-              id="textf"
-              name="textf"
-              placeholder="Text"
-            ></input>
-            <label className="sr-only" htmlFor="numf">
-              Name
-            </label>
-            <input
-              type="number"
-              id="numf"
-              name="numf"
-              placeholder="Number"
-            ></input>
-            <label className="sr-only" htmlFor="datef">
-              Name
-            </label>
-            <input type="date" id="datef" name="datef"></input>
-          </form>
+          <Button>Add Single game</Button>
         </span>
       </div>
     );

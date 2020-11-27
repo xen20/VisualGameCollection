@@ -1,14 +1,6 @@
 import React, { Component } from "react";
 
 class AddGameBatch extends Component {
-  echoNums() {
-    console.log(this.props.randomNums[0]);
-  }
-
-  componentDidMount() {
-    console.log("batch mnt");
-  }
-
   render() {
     return (
       <div>
@@ -17,7 +9,7 @@ class AddGameBatch extends Component {
           type="button"
           className="btn btn-primary"
         >
-          Batch input
+          Add multiple games
         </button>
       </div>
     );
